@@ -1,18 +1,7 @@
-[gd_resource type="AudioBusLayout" load_steps=4 format=3 uid="uid://buw5cexrxdsgc"]
+[gd_resource type="AudioBusLayout" load_steps=2 format=3 uid="uid://buw5cexrxdsgc"]
 
 [sub_resource type="AudioEffectSpectrumAnalyzer" id="AudioEffectSpectrumAnalyzer_flc5u"]
 resource_name = "SpectrumAnalyzer"
-
-[sub_resource type="AudioEffectChorus" id="AudioEffectChorus_dtb5v"]
-resource_name = "Chorus"
-
-[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_iaq5h"]
-resource_name = "Reverb"
-predelay_msec = 50.0
-predelay_feedback = 0.1
-room_size = 0.27
-spread = 0.4
-wet = 0.13
 
 [resource]
 bus/0/effect/0/effect = SubResource("AudioEffectSpectrumAnalyzer_flc5u")
@@ -21,9 +10,5 @@ bus/1/name = &"Engine"
 bus/1/solo = false
 bus/1/mute = false
 bus/1/bypass_fx = false
-bus/1/volume_db = 0.0
+bus/1/volume_db = -0.0016212463
 bus/1/send = &"Master"
-bus/1/effect/0/effect = SubResource("AudioEffectChorus_dtb5v")
-bus/1/effect/0/enabled = false
-bus/1/effect/1/effect = SubResource("AudioEffectReverb_iaq5h")
-bus/1/effect/1/enabled = false
